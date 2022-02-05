@@ -54,7 +54,7 @@ func main() {
 	addressWithClawbackPrivileges := ownerAddress // this account is allowed to clawback coins from others
 	assetUnitName := "UET"
 	assetName := "Unity Etoken"
-	assetUrl := "https://github.com/papes11/UNITY-ETOKEN"
+	assetUrl := "https://github.com/UnityEtoken/UNITY-ETOKEN-V1"
 	assetMetadataHash := "" // 
 	tx, err := transaction.MakeAssetCreateTxn(ownerAddress, txParams.Fee, txParams.LastRound, txParams.LastRound+10, nil, txParams.GenesisID, base64.StdEncoding.EncodeToString(txParams.GenesisHash),
 		coinTotalIssuance, coinDecimalsForDisplay, accountsAreDefaultFrozen, managerAddress, assetReserveAddress, addressWithFreezingPrivileges, addressWithClawbackPrivileges,
